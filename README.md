@@ -1,12 +1,82 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Currency Converter
 
-Currently, two official plugins are available:
+An elegant, fast, and modern currency converter built with **React**, **Vite**, and **Tailwind CSS**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![App Screenshot](./src/assets/money.jpg)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔄 Real-time currency conversion using [Fixer.io](https://fixer.io/) API
+- 🌐 Supports multiple currencies
+- 🔁 Swap currencies with a single click
+- 💡 Clean, responsive UI with Tailwind CSS
+- ⚡ Instant conversion and smooth UX
+
+## Demo
+
+> _Add a link or GIF here if deployed_
+
+## Getting Started
+
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v18+ recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+```bash
+git clone https://github.com/Aditya05-spec/CurrencyConverter.git
+cd CurrencyConverter
+npm install
+```
+
+### Running Locally
+
+```bash
+npm run dev
+```
+Open [http://localhost:5173](http://localhost:5173) to view the app.
+
+### Building for Production
+
+```bash
+npm run build
+```
+
+### Linting
+
+```bash
+npm run lint
+```
+
+## Project Structure
+
+- `src/` — Main source code
+	- `App.jsx` — Main app component
+	- `components/` — Reusable UI components
+	- `assets/` — Images and SVGs
+	- `hooks/` — Custom React hooks
+- `public/` — Static files
+- `index.html` — App entry point
+
+## Tech Stack
+
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Fixer.io API](https://fixer.io/)
+
+## API Key
+
+This app uses the free tier of Fixer.io, which is EUR-based. You can update the API key in `src/components/hooks/useCurrencyInfo.js`.
+
+## Credits
+
+- [Fixer.io](https://fixer.io/) for currency rates
+- [Vite](https://vitejs.dev/) for fast development
+- [Tailwind CSS](https://tailwindcss.com/) for styling
+
+## License
+
+MIT
